@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50F5CC179D9AC8AE8BA4C073 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB0080F223418B9B6A1A856 /* libPods.a */; };
 		83C582451C90837A006BAE3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C582441C90837A006BAE3E /* main.m */; };
 		83C582481C90837A006BAE3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C582471C90837A006BAE3E /* AppDelegate.m */; };
 		83C5824B1C90837A006BAE3E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C5824A1C90837A006BAE3E /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E58CA7A102C6EEE0CD79C71 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		78D93FFE20FDA6EE63DCF4C2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		83C582401C90837A006BAE3E /* WeatherTM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherTM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C582441C90837A006BAE3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83C582461C90837A006BAE3E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		83C582641C90837A006BAE3E /* WeatherTMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C582681C90837A006BAE3E /* WeatherTMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherTMUITests.m; sourceTree = "<group>"; };
 		83C5826A1C90837A006BAE3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEB0080F223418B9B6A1A856 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F5CC179D9AC8AE8BA4C073 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DC3C2D283683526D4244BE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEB0080F223418B9B6A1A856 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83C582371C90837A006BAE3E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +98,8 @@
 				83C5825C1C90837A006BAE3E /* WeatherTMTests */,
 				83C582671C90837A006BAE3E /* WeatherTMUITests */,
 				83C582411C90837A006BAE3E /* Products */,
+				EBAFB3390A072A48DA4572BB /* Pods */,
+				0DC3C2D283683526D4244BE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +155,15 @@
 			path = WeatherTMUITests;
 			sourceTree = "<group>";
 		};
+		EBAFB3390A072A48DA4572BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78D93FFE20FDA6EE63DCF4C2 /* Pods.debug.xcconfig */,
+				2E58CA7A102C6EEE0CD79C71 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83C5826D1C90837A006BAE3E /* Build configuration list for PBXNativeTarget "WeatherTM" */;
 			buildPhases = (
+				B1101C4D5AB6C81913BD4042 /* Check Pods Manifest.lock */,
 				83C5823C1C90837A006BAE3E /* Sources */,
 				83C5823D1C90837A006BAE3E /* Frameworks */,
 				83C5823E1C90837A006BAE3E /* Resources */,
+				AABE30A0FE5DACBD2FD480C0 /* Embed Pods Frameworks */,
+				5A91DD605A9ADBF2454D4C36 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +229,7 @@
 		83C582381C90837A006BAE3E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FJNG;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Francisco José Navarro García";
 				TargetAttributes = {
@@ -264,6 +292,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A91DD605A9ADBF2454D4C36 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AABE30A0FE5DACBD2FD480C0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1101C4D5AB6C81913BD4042 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83C5823C1C90837A006BAE3E /* Sources */ = {
@@ -409,9 +485,11 @@
 		};
 		83C5826E1C90837A006BAE3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78D93FFE20FDA6EE63DCF4C2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WeatherTM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fjnavarro.WeatherTM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,9 +498,11 @@
 		};
 		83C5826F1C90837A006BAE3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E58CA7A102C6EEE0CD79C71 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WeatherTM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fjnavarro.WeatherTM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +576,7 @@
 				83C5826F1C90837A006BAE3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83C582701C90837A006BAE3E /* Build configuration list for PBXNativeTarget "WeatherTMTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +585,7 @@
 				83C582721C90837A006BAE3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83C582731C90837A006BAE3E /* Build configuration list for PBXNativeTarget "WeatherTMUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +594,7 @@
 				83C582751C90837A006BAE3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
